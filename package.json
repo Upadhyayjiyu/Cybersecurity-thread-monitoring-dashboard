@@ -1,0 +1,16 @@
+{
+  "name": "cybersecurity-threat-monitoring-dashboard",
+  "version": "1.0.0",
+  "description": "Real-time security monitoring dashboard",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    
+    "concurrently": "^8.2.2"
+  }
+}
